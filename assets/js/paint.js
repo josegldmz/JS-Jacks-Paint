@@ -1,10 +1,10 @@
 function configureListeners() {
-    let images = document.getElementById('img')// select img elements  
+    let images = document.getElementsByTagName('img')// select img elements  
 
 
      for (var i = 0; i < images.length; i++) {
-        document.getElementById(images[i].id).addEventListener('mouseover', addOpacity, false)
-        document.getElementById(image[i].id).addEventListener('mouseout', removeOpacity, false)        
+        document.getElementByTagName(images[i].id).addEventListener('mouseover', addOpacity, false)
+        document.getElementByTagName(image[i].id).addEventListener('mouseout', removeOpacity, false)        
         // iterate over images and add mouseover event listeners      
     } 
 }
